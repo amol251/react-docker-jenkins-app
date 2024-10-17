@@ -1,9 +1,5 @@
 pipeline {
-    agent   {
-        docker {
-            image 'react-docker-jenkins-app-frontend'
-        }
-    }
+    agent any
     stages {
         stage('Build') { 
             steps {
